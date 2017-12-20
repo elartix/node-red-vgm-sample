@@ -1,0 +1,24 @@
+{
+  "name": "vgm-sample",
+  "version": "0.0.1",
+  "description": "Node Red sample project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elartix/node-red-vgm-sample.git"
+  },
+  "keywords": [
+    "node-red",
+    "javascript"
+  ],
+  "author": "VGM",
+  "license": "MIT",
+  "node-red": {
+    "nodes": {
+      "vgm-sample": "vgm-sample/vgm-sample.js"
+    }
+  }
+}
