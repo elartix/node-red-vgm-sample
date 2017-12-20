@@ -1,0 +1,29 @@
+<script type="text/javascript">
+    RED.nodes.registerType('vgm-sample',{
+        category: 'function',
+        color: '#ffe74b',
+        defaults: {
+            amountValue: {
+                value: 3,
+                required: true,
+                validate: RED.validators.number()
+            }
+        },
+        inputs:1,
+        outputs:1,
+        icon: "vgm-sample-icon.png",
+        label: function() {
+            return 'Amount: ' + (this.amountValue || "Not Specified");
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="vgm-sample">
+    <div class="form-row">
+        <label for="node-input-amountValue"><i class="icon-tag"></i> Amount:</label>
+        <input type="number" id="node-input-amountValue" placeholder="Amount value">
+    </div>
+
+</script>
+
+
